@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>농가 상세 정보</title>
+  <style>
+        .red-circle, .blue-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px; /* Optional: Add some margin between circles */
+            cursor: pointer; /* Make the circle clickable */
+        }
+
+        .red-circle {
+            background-color: red;
+        }
+
+        .blue-circle {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<h2>농가 상세 정보</h2>
+<a href="/comment">농장 comment 등록</a>
+<a href="/comment/edit">농장 comment 수정</a>
+<a href="/comment/delete">농장 comment 삭제</a>
+<p>농활/농체 이름: <span th:text="${name}"></span></p>
+<p>지역이름: <span th:text="${region}"></span></p>
+<p>주소: <span th:text="${address}"></span></p>
+<p>농가 정보: <span th:text="${info}"></span></p>
+
+<div>
+  <div th:if="${flag}" class="blue-circle" onclick="toggleCircleColor(this)"></div>
+  <div th:unless="${flag}" class="red-circle" onclick="toggleCircleColor(this)"></div>
+</div>
+
+<script>
+        function toggleCircleColor(element) {
+            element.classList.toggle('blue-circle');
+            element.classList.toggle('red-circle');
+        }
+    </script>
+</body>
+</html>

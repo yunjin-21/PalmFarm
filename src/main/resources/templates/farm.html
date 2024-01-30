@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>save</title>
+  <!-- jquery cdn -->
+  <script
+          src="https://code.jquery.com/jquery-3.6.3.min.js"
+          integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+          crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- action속성: form에 작성한 데이터를 어디로 보낼지 지정 -->
+<form action="/farm" method="post">
+  <!-- name속성: 서버로 전송할 때 변수이름의 역할 -->
+  이미지 pass:
+  농활/농체 이름 : <input type="text" name="name"> <br>
+  지역이름: <input type="text" name="region"> <br>
+  주소:  <input type="text" name="address"> <br>
+  농가 정보:  <input type="text" name="info"> <br>
+  <input type="submit" value="농장 등록">
+
+</form>
+</body>
+
+</html>

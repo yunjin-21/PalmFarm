@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/farm?Timezone=Asia/Seoul
+    username: root
+    password: Leeyunjin1!!
+
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+
+
+cloud:
+  aws:
+    credentials:
+      accessKey: AKIARBD2KDLFSSFRNSU6
+      secretKey: 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
+    s3:
+      bucket: ryan-buckets
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false
+
+  logging:
+    level:
+      org.hibernate.SQL: debug
+
+
