@@ -25,6 +25,8 @@ cloud:
     stack:
       auto: false
 
+
+
   logging:
     level:
       org.hibernate.SQL: debug
