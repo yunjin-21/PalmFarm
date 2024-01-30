@@ -4,7 +4,7 @@
     
     POST /api/signup
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/803dc6ca-343e-4ac8-b2db-df0d84c29494/2a0dcdf6-23dc-4c92-9cfb-9496c65ccdf2/Untitled.png)
+    ![git readme image 001](https://prod-files-secure.s3.us-west-2.amazonaws.com/803dc6ca-343e-4ac8-b2db-df0d84c29494/2a0dcdf6-23dc-4c92-9cfb-9496c65ccdf2/Untitled.png)
     
 - [x]  **사용자 로그인 O**
     
